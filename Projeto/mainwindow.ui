@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>682</width>
+    <height>498</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>rasterizer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QSpinBox" name="spinBox">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>369</y>
+      <width>27</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>42</width>
+      <height>42</height>
+     </size>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>7</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>349</y>
+      <width>48</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tamanho:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="X1">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>383</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>42</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinBox_5">
+    <property name="geometry">
+     <rect>
+      <x>312</x>
+      <y>369</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>0</number>
+    </property>
+    <property name="maximum">
+     <number>25</number>
+    </property>
+    <property name="value">
+     <number>25</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Y1">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>414</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>42</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="Y2">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>459</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>42</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>440</y>
+      <width>16</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y2:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="MO_FRONT">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>369</y>
+      <width>99</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar/Ocultar</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>349</y>
+      <width>55</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fronteira</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="MO_GRID">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>370</y>
+      <width>99</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar/Ocultar</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>340</y>
+      <width>165</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>395</y>
+      <width>16</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Y1:</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="X2">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>428</y>
+      <width>33</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>42</width>
+      <height>22</height>
+     </size>
+    </property>
+    <property name="maximum">
+     <number>24</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>409</y>
+      <width>16</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X2:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>349</y>
+      <width>24</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Grid</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>364</y>
+      <width>16</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>X1:</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C_EE">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>415</y>
+      <width>106</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Equação explicita</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>340</y>
+      <width>165</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C_PM">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>392</y>
+      <width>82</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ponto Medio</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>340</y>
+      <width>165</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>349</y>
+      <width>53</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Espessura:</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>340</y>
+      <width>165</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="MO_RETA">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>454</y>
+      <width>99</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Mostrar/Ocultar</string>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+    <property name="tristate">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="EXIT">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>460</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sair</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>349</y>
+      <width>70</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Algoritimos</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="C_DDA">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>369</y>
+      <width>44</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>DDA</string>
+    </property>
+   </widget>
+   <widget class="TelaPrinc" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>641</width>
+      <height>321</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>349</y>
+      <width>29</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Tahoma</family>
+      <pointsize>9</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Reta</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>TelaPrinc</class>
+   <extends>QWidget</extends>
+   <header>telaprinc.h</header>
+   <container>1</container>
+   <slots>
+    <slot>alterarX1(int)</slot>
+    <slot>alterarY1(int)</slot>
+    <slot>alterarX2(int)</slot>
+    <slot>alterarY2(int)</slot>
+    <slot>exibGrid(bool)</slot>
+    <slot>tamGrid(int)</slot>
+    <slot>moFronteira(bool)</slot>
+    <slot>checkEE(bool)</slot>
+    <slot>checkPM(bool)</slot>
+    <slot>checkDAA(bool)</slot>
+    <slot>moReta(bool)</slot>
+    <slot>especReta(int)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>EXIT</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>480</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>556</x>
+     <y>359</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>X1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>alterarX1(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Y1</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>alterarY1(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>207</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>X2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>alterarX2(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>476</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>337</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Y2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>alterarY2(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>214</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MO_GRID</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>exibGrid(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>540</x>
+     <y>290</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>220</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_5</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>tamGrid(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>292</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>428</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MO_RETA</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>checkDAA(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>519</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>415</x>
+     <y>229</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>C_DDA</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>checkDAA(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>443</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>345</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>C_PM</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>checkPM(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>460</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>407</x>
+     <y>364</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>C_EE</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>checkEE(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>480</x>
+     <y>384</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>392</x>
+     <y>389</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MO_FRONT</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>moFronteira(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>471</x>
+     <y>434</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>408</x>
+     <y>436</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MO_RETA</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>widget</receiver>
+   <slot>moReta(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>514</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>420</x>
+     <y>181</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>widget</receiver>
+   <slot>especReta(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>548</x>
+     <y>111</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
